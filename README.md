@@ -30,16 +30,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Download
 ```
-$ git clone git@github.com:Im087/Auction.git
+git clone git@github.com:Im087/Auction.git
 ```
 
 ## Install Angular dependencies
 ```
-$ npm install
+npm install
 ```
 
 ## Run
 ```
-$ node auction-server/build/auction-server.js
+node auction-server/build/auction-server.js
 ```
 
