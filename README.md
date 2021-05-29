@@ -29,19 +29,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # How to run the App?
 
 ## Download
-Copy this to your terminal
 ```
-
+$ git clone git@github.com:Im087/Auction.git
 ```
 
 ## Install Angular dependencies
-Copy this to your terminal
 ```
 $ npm install
 ```
 
 ## Run
-Copy this to your terminal
 ```
 $ npm auction-server/build/auction-server.js
 ```
