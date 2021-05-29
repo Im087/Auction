@@ -40,6 +40,6 @@ $ npm install
 
 ## Run
 ```
-$ npm auction-server/build/auction-server.js
+$ node auction-server/build/auction-server.js
 ```
 
