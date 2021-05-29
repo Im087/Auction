@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# How to run the App?
+
+## Download
+Copy this to your terminal
+```
+
+```
+
+## Install Angular dependencies
+Copy this to your terminal
+```
+$ npm install
+```
+
+## Run
+Copy this to your terminal
+```
+$ npm auction-server/build/auction-server.js
+```
+
