@@ -1,0 +1,46 @@
+<div class="card">
+  <img src="http://placehold.it/820x230">
+  <div class="card-body">
+    <h4>{{product?.title}}</h4>
+    <h4>{{product?.price}} €</h4>
+    <p>{{product?.desc}}</p>
+  </div>
+  <div class="card-footer">
+    <p class="float-left">
+      <app-stars [rating]="product?.rating"></app-stars>
+    </p>
+    <p class="float-right">There are {{comments?.length}} comments</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <button class="btn btn-lg" [ngClass]="{'btn-secondary': !subscribed, 'btn-primary': subscribed}"
+    (click)="subscribe()">
+      {{subscribed? "Unsubscribe": "Subscribe"}}
+    </button>
+    <label>Current bid: {{currentBid | number: '.2-2'}} €</label>
+  </div>
+</div>
+
+<button class="btn btn-success" (click)="isCommentHidden = !isCommentHidden">Add a comment</button>
+
+<div class="card" [hidden]="isCommentHidden">
+  <div class="card-body">
+    <app-stars [readonly]="false" [(rating)]="newRating"></app-stars>
+    <textarea [(ngModel)]="newComment" placeholder="You can add a comment here!"></textarea>
+    <button class="btn btn-primary" (click)="addComment()">Submit</button>
+  </div>
+</div>
+
+<div class="card" *ngFor="let comment of comments">
+  <div class="card-body">
+    <app-stars [rating]="comment.rating"></app-stars>
+    <span>{{comment.content}}</span>
+    <br>
+  </div>
+  <div class="card-footer">
+    <span>{{comment.user}} &nbsp;</span>
+    <span>{{comment.timeStamp}}</span>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="row justify-content-between">
+  <div class="card" *ngFor="let product of products | async">
+      <img [src]="imgUrl" class="card-img-top">
+      <div class="card-body">
+        <h4><a [routerLink]="['/product', product.id]">{{product.title}}</a></h4>
+        <h4>{{product.price}} €</h4>
+        <p>{{product.desc}}</p>
+      </div>
+      <div class="card-footer">
+        <app-stars [rating]="product.rating"></app-stars>
+      </div>
+  </div>
+</div>

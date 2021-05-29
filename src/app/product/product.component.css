@@ -1,0 +1,9 @@
+div.card {
+  margin-bottom: 15px;
+  width: 32%;
+}
+
+div.col-12 {
+  padding: 0;
+  margin-bottom: 20px;
+}

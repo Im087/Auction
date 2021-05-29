@@ -1,0 +1,4 @@
+<p>
+  <i *ngFor="let star of stars; let key = index" [ngClass]="{'bi bi-star-fill': star, 'bi bi-star': !star}" (click)="clickStar(key)"></i>
+  <span> {{rating | number: "1.0-0"}}/5</span>
+</p>
